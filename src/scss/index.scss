@@ -1,0 +1,72 @@
+@import "cdn.scss";
+@import "variables/fontsize.scss";
+@import "variables/colors.scss";
+@import "mixins/buttons.scss";
+@import "mixins/brands.scss";
+@import "footer.scss";
+@import "contacts.scss";
+@import "download.scss";
+@import "header.scss";
+@import "features.scss";
+@import "work.scss";
+@import "ourteam.scss";
+@import "testimonials.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.container {
+  max-width: 1170px;
+  padding: 0px 15px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+html {
+  font-family: "Roboto", "Raleway", "Open Sans", sans-serif;
+  font-size: 16px;
+}
+section {
+  padding: 0 0 115px;
+}
+h1 {
+  font-weight: 900;
+  font-size: $_64px;
+  line-height: $_75px;
+  text-transform: uppercase;
+  text-align: center;
+}
+h2 {
+  font-weight: 700;
+  font-size: $_36px;
+  line-height: $_48px;
+  text-align: left;
+}
+h3 {
+  font-weight: 500;
+  font-size: $_30px;
+  line-height: $_35px;
+  text-align: center;
+}
+h4 {
+  font-weight: 900;
+  font-size: $_24px;
+  line-height: $_28px;
+  text-align: center;
+}
+h5 {
+  font-weight: 700;
+  font-size: $_18px;
+  line-height: $_21px;
+  text-align: center;
+}
+h6 {
+  font-weight: 700;
+  font-size: $_13px;
+  line-height: $_15px;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.footer {
+  padding: 24px 0;
+  background-color: $bg_footer;
+}
+
+.footer-copyright {
+  width: 370px;
+  margin: auto;
+  font-weight: 400;
+  font-size: $_18px;
+  line-height: $_21px;
+  text-align: center;
+  text-transform: capitalize;
+  color: $text_grey_footer;
+}
+.copyright-text {
+  display: block;
+  margin: auto;
+  &::after {
+    content: "by kamal chaneman";
+    color: $text_white;
+  }
+}

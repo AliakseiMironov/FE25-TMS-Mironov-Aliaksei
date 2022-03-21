@@ -1,0 +1,126 @@
+.ourteam {
+  // @media (max-width: 1024px) {
+  //   padding: 78px 0 28px;
+  // }
+  // @media (max-width: 480px) {
+  //   padding-bottom: 0;
+  // }
+}
+.ourteam-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+.ourteam-card {
+  margin: 0 15px;
+  width: calc((100% - 120px) / 4);
+  display: flex;
+  flex-direction: column;
+  // @media (max-width: 800px) {
+  //   margin-bottom: 50px;
+  // }
+  // @media (max-width: 800px) {
+  //   width: calc((100% - 60px) / 2);
+  // }
+  // @media (max-width: 480px) {
+  //   width: calc(100% - 30px);
+  // }
+  .ourteam-card-photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 30px;
+    img {
+      width: 100%;
+    }
+  }
+  .ourteam-card-name {
+    font-size: $_24px;
+    line-height: $_28px;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: $text_black;
+    text-align: left;
+    margin-bottom: 6px;
+    // @media (max-width: 800px) {
+    //   font-size: $_30px;
+    //   line-height: $_35px;
+    // }
+    // @media (max-width: 480px) {
+    //   font-size: $_36px;
+    //   line-height: $_42px;
+    // }
+  }
+  .ourteam-card-position {
+    font-size: $_18px;
+    line-height: $_21px;
+    text-align: left;
+    text-transform: uppercase;
+    color: $text_red;
+    margin-bottom: 18px;
+    // @media (max-width: 800px) {
+    //   font-size: $_24px;
+    //   line-height: $_28px;
+    // }
+    // @media (max-width: 480px) {
+    //   font-size: $_30px;
+    //   line-height: $_35px;
+    // }
+  }
+  .ourteam-card-description {
+    font-size: $_18px;
+    line-height: $_21px;
+    text-align: left;
+    color: $text_grey;
+    margin-bottom: 38px;
+    display: flex;
+    flex-grow: 1;
+    // @media (max-width: 800px) {
+    //   font-size: $_24px;
+    //   line-height: $_28px;
+    // }
+    // @media (max-width: 480px) {
+    //   font-size: $_30px;
+    //   line-height: $_35px;
+    // }
+  }
+
+  ul {
+    display: flex;
+    li {
+      margin-right: 6px;
+      @include brands;
+      // @media (max-width: 1200px) {
+      //   width: 33px;
+      //   height: 33px;
+      // }
+      // @media (max-width: 480px) {
+      //   width: 39px;
+      //   height: 39px;
+      // }
+      &:hover {
+        transform: scale(1.2);
+      }
+      &:last-child {
+        margin-right: 0px;
+      }
+      .fa-brands {
+        color: $brand_color;
+        font-size: 20px;
+        // @media (max-width: 1200px) {
+        //   font-size: 18px;
+        // }
+        // @media (max-width: 480px) {
+        //   font-size: 20px;
+        // }
+        &:hover {
+          color: $brand_color_hover;
+        }
+      }
+    }
+  }
+}
